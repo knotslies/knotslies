@@ -1,4 +1,4 @@
-<head><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">@layer {
+<html data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">@layer {
 html {
     background-color: var(--darkreader-background-ffffff, #181a1b) !important;
 }
@@ -852,4 +852,4 @@ embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }</style></h
 	</main>
 
 
-</body>
+</body></html>
