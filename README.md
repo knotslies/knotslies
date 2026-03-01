@@ -1,16 +1,855 @@
-## Hi there 👋
+<head><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">@layer {
+html {
+    background-color: var(--darkreader-background-ffffff, #181a1b) !important;
+}
+html {
+    color-scheme: dark !important;
+}
+iframe {
+    color-scheme: dark !important;
+}
+html, body {
+    background-color: var(--darkreader-background-ffffff, #181a1b);
+}
+html, body {
+    border-color: var(--darkreader-border-4c4c4c, #736b5e);
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+a {
+    color: var(--darkreader-text-0040ff, #3391ff);
+}
+table {
+    border-color: var(--darkreader-border-808080, #545b5e);
+}
+mark {
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+::placeholder {
+    color: var(--darkreader-text-a9a9a9, #b2aba1);
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: var(--darkreader-background-faffbd, #404400) !important;
+    color: var(--darkreader-text-000000, #e8e6e3) !important;
+}
+::selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+::-moz-selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+}</style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, img.Wirisformula, a[data-testid="headerMediumLogo"]>svg, .d2l-navigation-link-image-container, .d2l-iframe-loading-container {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}
+[data-darkreader-inline-bg] {
+  background: var(--darkreader-inline-bg) !important;
+}
+[data-darkreader-inline-border-short] {
+  border: var(--darkreader-inline-border-short) !important;
+}
+[data-darkreader-inline-border-bottom-short] {
+  border-bottom: var(--darkreader-inline-border-bottom-short) !important;
+}
+[data-darkreader-inline-border-left-short] {
+  border-left: var(--darkreader-inline-border-left-short) !important;
+}
+[data-darkreader-inline-border-right-short] {
+  border-right: var(--darkreader-inline-border-right-short) !important;
+}
+[data-darkreader-inline-border-top-short] {
+  border-top: var(--darkreader-inline-border-top-short) !important;
+}
+[data-darkreader-inline-invert] {
+    filter: invert(100%) hue-rotate(180deg);
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: var(--darkreader-background-ffffff, #181a1b);
+   --darkreader-neutral-text: var(--darkreader-text-000000, #e8e6e3);
+   --darkreader-selection-background: var(--darkreader-background-0060d4, #004daa);
+   --darkreader-selection-text: var(--darkreader-text-ffffff, #e8e6e3);
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style>
+	<meta charset="utf-8">
+	<title>The Knots lies</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.6;
+			margin: 0;
+		}
 
-<!--
-**knotslies/knotslies** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+		main {
+			max-width: 768px;
+			margin: 2rem auto;
+			padding: 0 1rem;
+		}
 
-Here are some ideas to get you started:
+		h1,h2,h3,h4,h5 {
+			border-bottom: 1px solid #ccc;
+			padding-bottom: .3em;
+		}
+		code {
+			background: #f4f4f4;
+			padding: .2em .4em;
+			border-radius: 3px;
+		}
+		pre {
+			background: #f4f4f4;
+			padding: 1em;
+			overflow-x: auto;
+		}
+		img {
+			display: block;
+			margin: 1.5em auto;
+		}
+		a {
+			text-decoration: underline;
+		}
+		a:has(code) {
+			color: #0b63c5;
+			text-decoration: none;
+		}
+		a:hover code {
+			text-decoration: underline;
+		}
+	</style><style class="darkreader darkreader--sync" media="screen"></style>
+<meta name="darkreader" content="6960e0f4eb0f4294b0a500111e2767d6"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: var(--darkreader-background-ffd76e, #684b00) !important;
+    border-color: var(--darkreader-background-c59d00, #9e7e00) !important;
+    color: var(--darkreader-text-302505, #d7d4cf) !important;
+}
+#vimvixen-console-frame {
+    color-scheme: light !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: var(--darkreader-background-add8e6, #1b4958) !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: var(--darkreader-background-cfecf5, #0f3a47) !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: var(--darkreader-background-f5f5f5, #1e2021) !important;
+}
+.tou-uknfeu {
+    background-color: var(--darkreader-background-faedda, #432c09) !important;
+}
+.tou-6i3zyv {
+    background-color: var(--darkreader-background-85c3d8, #245d70) !important;
+}
+div.mermaid-viewer-control-panel .btn {
+    background-color: var(--darkreader-neutral-background);
+    fill: var(--darkreader-neutral-text);
+}
+svg g rect.er {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.entityBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxOdd {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxEven {
+    fill: var(--darkreader-selection-background);
+    fill-opacity: 0.8 !important;
+}
+svg rect.er.relationshipLabelBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g g.nodes rect,
+svg g g.nodes polygon {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.task {
+    fill: var(--darkreader-selection-background) !important;
+}
+svg line.messageLine0,
+svg line.messageLine1 {
+    stroke: var(--darkreader-neutral-text) !important;
+}
+div.mermaid .actor {
+    fill: var(--darkreader-neutral-background) !important;
+}
+mitid-authenticators-code-app > .code-app-container {
+    background-color: white !important;
+    padding-top: 1rem;
+}
+iframe#unpaywall[src$="unpaywall.html"] {
+    color-scheme: light !important;
+}
+select {
+    --darkreader-bg--form-control-background-color: rgba(22, 22, 22, 0) !important;
+}
+body#tumblr {
+    --darkreader-bg--secondary-accent: 31, 32, 34 !important;
+    --darkreader-bg--white: 23, 23, 23 !important;
+    --darkreader-text--black: 228, 224, 218 !important;
+}
+:host {
+    --d2l-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-button-icon-background-color-hover: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-color-ferrite: var(--darkreader-neutral-text) !important;
+    --d2l-color-sylvite: var(--darkreader-bg--d2l-color-sylvite) !important;
+    --d2l-dropdown-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-dropdown-border-color: var(--darkreader-border--d2l-color-mica) !important;
+    --d2l-input-backgroud-color: var(--darkreader-neutral-background) !important;
+    --d2l-menu-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-tooltip-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-tooltip-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+:host([_floating]) .d2l-floating-buttons-container {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-top-color: var(--darkreader-border--d2l-color-mica) !important;
+    opacity: 0.88 !important;
+}
+d2l-card {
+    background: var(--darkreader-neutral-background) !important;
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+d2l-dropdown-content > div,
+d2l-menu-item {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-radius: 10px !important;
+}
+d2l-empty-state-simple {
+    border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-button-filter > ul > li > a.vui-button {
+    border-color: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-label-text:has(.d2l-button-subtle-content):hover,
+.d2l-label-text:has(.d2l-button-subtle-content):focus,
+.d2l-label-text:has(.d2l-button-subtle-content):active {
+    background-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-navigation-centerer {
+    color: inherit !important;
+}
+.d2l-tabs-layout {
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+.d2l-input,
+.d2l-calendar-date,
+.d2l-htmleditor-container {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-collapsible-panel {
+    border: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+    border-radius: 0.4rem !important;
+}
+.d2l-collapsible-panel-divider {
+    border-bottom: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-w2d-flex {
+    border-bottom: 2px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-collapsible-panel scrolled,
+.d2l-collapsible-panel-header,
+.d2l-w2d-collection-fixed {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-loading-spinner-bg {
+    fill: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-loading-spinner-bg-stroke {
+    stroke: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-loading-spinner-wrapper svg path,
+.d2l-loading-spinner-wrapper svg circle {
+    fill: var(--darkreader-neutral-background) !important;
+}
+.d2l-twopanelselector-side.d2l-twopanelselector-side-sep {
+    background: var(--darkreader-bg--d2l-color-mica) !important;
+}
+.d2l-le-TreeAccordionItem-anchor::before {
+    background: var(--darkreader-bg--d2l-color-corundum) !important;
+}
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }</style></head>
+<body>
+	<main>
+		<p><strong>Abstract:</strong> in this document I present a proof that
+  several of the ambitious claims by Bitcoin Knots supporters are not
+  true. Most notably, the claims about contiguous data. To prove this I
+  stored over 66kB <em>contiguous</em> image file in the Bitcoin time
+  chain without using <code>OP_RETURN</code>, Taproot or following
+  policy rules and, to highlight the point, the image file is <em>itself
+  an entire transaction</em>. This document also explains how anyone can
+  verify this claim themselves using their own node.</p>
+  <h3 id="important-update">Important update</h3>
+  <p>I listened to feedback and also made a transaction that is
+  <strong>BIP-110-compliant</strong>! <a href="#update---the-bip-110-compliant-variant">Go to the end to verify
+  this.</a></p>
+  <h2 id="contiguous-data">Contiguous data</h2>
+  <p>The main claim of the Knots supporters is that whether the data is
+  stored on disk interrupted by other data or not (contiguous) has any
+  bearing on whether it is legal. Therefore, they claim, we have to
+  decrease the size of every bit of data Bitcoin stores to ensure nobody
+  can do anything like that. The idea is already ridiculous. Imagine
+  this in court:</p>
+  <ul>
+  <li>Judge: It is alleged that you stored illegal content on your
+  device.</li>
+  <li>Defendant: Yes, but it was split up in parts.</li>
+  <li>Judge: OK, not guilty.</li>
+  </ul>
+  <p>However there is a way to show this idea is even more nonsensical
+  than it looks. Despite Bitcoin already supposedly not allowing more
+  than 520B of contiguous data except for transaction outputs whose
+  scripts start with <code>OP_RETURN</code>, I managed to make a
+  transaction that, when interpreted as an image file, can be processed
+  by readily available image viewers to show an image of Luke-Jr
+  crying:</p>
+  <figure>
+  <img src="luke-jr-final.jpg" alt="I really didn’t want to make this personal by using this specific image but when I heard Luke accusing people left and right of being bad actors, I figured it’s a fair game.">
+  <figcaption aria-hidden="true">I <strong>really</strong> didn’t want
+  to make this personal by using this specific image but when I heard
+  Luke accusing people left and right of being bad actors, I figured
+  it’s a fair game.</figcaption>
+  </figure>
+  <p>Yes, that’s right. Not only is that image in the time chain and not
+  only is it contiguously stored but also the entire transaction is an
+  image, so you don’t even need to skip the initial bytes.</p>
+  <p>In addition, the transaction contains contiguous ASCII text longer
+  than 520 bytes without using <code>OP_RETURN</code> and it even
+  satisfies the rules imposed by BIP-110. That means, if you only
+  validated that text using BIP-110 logic the transaction would
+  pass.</p>
+  <h2 id="verification-of-the-proof">Verification of the proof</h2>
+  <h3 id="using-your-own-node">Using your own node</h3>
+  <p>Here’s how you can verify it yourself on your own node using
+  command line:</p>
+  <div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">bitcoin-cli</span> getrawtransaction b8cc570ef453508b6c6a1758bc591c276abdbe2b88881ae487ba4e858bd8d4be <span class="kw">|</span> <span class="ex">xxd</span> <span class="at">-r</span> <span class="at">-p</span> <span class="op">&gt;</span> luke.tiff</span></code></pre></div>
+  <p>If you use your node on the desktop you can now directly open
+  <code>luke.tiff</code> file in your home directory. If you use
+  <code>ssh</code> to access your node in the form of
+  <code>ssh yourusername@yournode</code> you need to first copy the file
+  to your computer using e.g.&nbsp;<code>scp</code>:</p>
+  <div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scp</span> yourusername@yournode:luke.tiff luke.tiff</span></code></pre></div>
+  <p><small>Note the colon between the hostname and the file
+  name.</small></p>
+  <p>Then you can open it on your computer.</p>
+  <p>By looking at <a href="https://linux.die.net/man/1/xxd"><code>man xxd</code></a> you
+  can verify that the only thing <code>xxd -r -p</code> is doing is
+  reversing the hex encoding <code>bitcoin-cli</code> uses. It does not
+  do any skipping of bytes or seeking in the file. (While
+  <code>xxd</code> itself does support seeking, that command is not
+  doing so.) Further, you can look at the output of
+  <code>bitcoin-cli getrawtransaction</code> to see that it does in fact
+  spit out a lot of hex characters that look like what an image file
+  might be. Or a transaction, depending on how you look at it. To
+  strengthen your confidence about the command you can also ask around
+  some programmers, including non-bitcoiners, who know a bit about Linux
+  to confirm that this is true. Feel free add an LLM into the mix. And
+  if you think I’ve just backdoored the image viewer (nice of you to
+  think I’d be able to do that!) you can try opening the image on some
+  old computer that didn’t receive updates for a year. Or try to get an
+  archived version of an image viewer. Or just use multiple devices to
+  see the image.</p>
+  <p>Additionally, you can extract the accompanying text using:</p>
+  <div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">bitcoin-cli</span> getrawtransaction b8cc570ef453508b6c6a1758bc591c276abdbe2b88881ae487ba4e858bd8d4be <span class="kw">|</span> <span class="ex">xxd</span> <span class="at">-r</span> <span class="at">-p</span> <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-c</span> +45889 <span class="kw">|</span> <span class="fu">head</span> <span class="at">-c</span> 4390</span></code></pre></div>
+  <p>This does obviously seek in the transaction and chops off the
+  unneeded tail but it is still contiguous.</p>
+  <h3 id="using-mempool.space">Using mempool.space</h3>
+  <p>If you don’t have a node and trust mempool.space to not cooperate
+  with me to bamboozle you you can use their service to download the
+  transaction directly in the <em>binary form</em> and save it as a tiff
+  file. Just right click <a href="https://mempool.space/api/tx/b8cc570ef453508b6c6a1758bc591c276abdbe2b88881ae487ba4e858bd8d4be/raw">this
+  link</a> and download the link. Make sure to save the downloaded file
+  with <code>.tiff</code> extension. Then open it normally as any other
+  file.</p>
+  <p>If you copy the link and inspect it you will see that it points to
+  a transaction with the same txid as mentioned above and that raw
+  (binary) transaction mode is requested.</p>
+  <h2 id="the-claims-debunked-by-this-transaction">The claims debunked
+  by this transaction</h2>
+  <h3 id="it-matters-whether-the-data-in-the-transaction-is-contiguous-or-not">It
+  matters whether the data in the transaction is contiguous or not</h3>
+  <p>As you can see, despite the <em>consensus</em> rules not allowing
+  contiguous data I still managed to store contiguous image file.
+  Messing with consensus parameters won’t change it, only make it take a
+  day or two longer to workaround it.</p>
+  <h3 id="use-of-op_return-is-required-to-store-contigous-data">Use of
+  <code>OP_RETURN</code> is required to store contigous data</h3>
+  <p>You can inspect the transaction using:</p>
+  <div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">bitcoin-cli</span> getrawtransaction b8cc570ef453508b6c6a1758bc591c276abdbe2b88881ae487ba4e858bd8d4be 1 <span class="kw">|</span> <span class="fu">less</span></span></code></pre></div>
+  <p><small>Note the <code>1</code> at the end; <code>less</code> is
+  optional, just to not spam your terminal.</small></p>
+  <p>And see for yourself that the transaction doesn’t have a single
+  <code>OP_RETURN</code> opcode anywhere in its body. You could
+  completely ban <code>OP_RETURN</code> and it’d still be valid. You can
+  double check this with any transaction analyzer and it will say the
+  same thing: there is no <code>OP_RETURN</code>.</p>
+  <h3 id="taproot-brought-in-a-vulnerability-that-allows-storing-large-data-in-the-chain-this-was-not-possible-before">Taproot
+  brought in a vulnerability that allows storing large data in the
+  chain, this was not possible before</h3>
+  <p>This claim is disproven by the transaction NOT using Taproot. This
+  can be verified too but to do that you need to retrieve the previous
+  transaction because it is always the scriptPubkey in the previous
+  transaction that dictates the rules of spending. Using the above
+  mentioned command, you can see the txid of the previous transaction
+  specified in the <code>"txid":</code> field within the
+  <code>"vin"</code> array. Note that each input has the same previous
+  txid. Use this txid to get the previous transaction:</p>
+  <div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">bitcoin-cli</span> getrawtransaction PUT-PARENT-HASH-HERE 1</span></code></pre></div>
+  <p>In its outputs you will see that each one has:</p>
+  <p><code>"type": "witness_v0_scripthash"</code></p>
+  <p>Which is NOT Taproot as taproot would be v1.</p>
+  <p>Notably, the practical effect of the technique I used increases the
+  processing cost on the nodes compared to inscriptions. So if you were
+  to ban Taproot people could just switch to my technique and the
+  situation would become <em>worse</em>.</p>
+  <h3 id="op_if-is-required-to-store-large-data"><code>OP_IF</code> is
+  required to store large data</h3>
+  <p>The transaction doesn’t use a single <code>OP_IF</code> anywhere in
+  its scripts. In SegWit v0, the script is stored as the last element of
+  the witness - thus you can use the command above to get the script for
+  each input (there are only three). Then use this command to decode
+  it:</p>
+  <div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">bitcoin-cli</span> decodescript PASTE-THE-SCRIPT-HERE</span></code></pre></div>
+  <p>You will see many opertaions but none of them is
+  <code>OP_IF</code></p>
+  <h3 id="its-difficult-to-get-non-standard-transaction-in">It’s
+  difficult to get non-standard transaction in</h3>
+  <p>If it is the case then why is BIP-110 proposing a consensus
+  change?</p>
+  <p>Anyway, this transaction is non-standard mainly because of the
+  strange version number required to make <strong>the entire
+  transation</strong> look like a valid image file. It also likely blows
+  through some limits but it <em>still</em> uses techniques that can
+  bypass those limits by placing the data in multiple inputs in a way
+  that <em>still</em> makes it contiguous. If being contiguous is what’s
+  relevant here, the point still stands, though one would need to skip
+  first <code>n</code> bytes of the transaction (depending on image
+  size).</p>
+  <p>I do admit that, based on my experience, putting a non-standard
+  transaction which is <strong>in its entirety an illegal</strong> image
+  would be significantly harder than what I did but it doesn’t solve
+  everything. It’s a bit more involved:</p>
+  <ul>
+  <li>If one wants a small (&lt; 1kB) non-standard transaction mined
+  this takes like 2 minutes to figure out. (However, I currently don’t
+  know of a <em>specific</em> solution to encode an <em>image</em> in
+  this way.)</li>
+  <li>If one wants a large transaction with illegal contiguous content,
+  the best way is to simply <em>not</em> try to make it an image in its
+  entirety, so that it can be standard.</li>
+  <li>Large non-standard transaction wiht <em>legal</em> content can be
+  done as seen here, it just takes a few days of waiting to get it
+  in.</li>
+  </ul>
+  <p>In any case, you’re not getting any legal effect by messing with
+  policy filters and you might give an unfair advantage to the big
+  miners instead. It’s really funny that people behind Ocean pool are
+  promoting something that will hurt them in the long run.</p>
+  <h3 id="this-technique-is-still-too-hard-to-do">This technique is
+  still too hard to do</h3>
+  <p>It took only one day to <strong>write the software</strong> that
+  takes an image and embeds it into a transaction contiguously. This
+  still required skipping the initial bytes. The more interesting
+  version that makes the entire transaction a valid image file took two
+  more days to code. Notably, this didn’t require crazy cryptographic,
+  computer science or image processing skills. It was all just stupid
+  fiddling with some constants and slightly modifying a readily
+  available Open Source image library.</p>
+  <p>The only area I had an advantage in is knowing Bitcoin really well.
+  But even there, 99% of it was just encoding rules, which are easy -
+  literally the first programming-related thing I learned about Bitcoin.
+  The rest was just the consensus rules knowing what data belongs
+  where.</p>
+  <p>Any programmer capable of understanding basics of Bitcoin should be
+  able to do this, even if potentially a bit more slowly. It might be
+  even the case that hand-assembling the transaction would’ve been
+  easier.</p>
+  <p>Notably, now that I have the software ready, I could produce many
+  more such transactions. It runs in about 0.25s on a single core on my
+  old machine and the code isn’t optimized much. So I could produce 16
+  images per second on a 4-core machine.</p>
+  <h2 id="why-did-i-do-this-potential-questions-and-answers.">Why did I
+  do this? Potential questions and answers.</h2>
+  <h3 id="spammeeeeeeeeer-youre-just-a-bad-actor-attacking-bitcoin">Spammeeeeeeeeer!!!!
+  You’re just a bad actor attacking Bitcoin</h3>
+  <p>Honestly, I really, really, really didn’t want to do this. I have a
+  track record of speaking against spam, against increasing the block
+  size, bashing shitcoins like Monero that instead of removing data from
+  the chain put more garbage into the chain to mask them, while praising
+  Lightning Network and Taproot for doing the opposite. I really hate
+  spam and I don’t want my node to process garbage. <strong>Including
+  transactions themselves.</strong> Doing this kind of felt like
+  stabbing myself.</p>
+  <p>However, there’s something I hate much more than spam: Untruths. Or
+  lies, as Luke likes to call them. I tried arguing about this in the
+  past, showed a contiguous image encoded to fit into witness and yet,
+  the Knots supporters are still saying the same stuff over and over as
+  if it wasn’t debunked. I felt that the argument is hard to convey
+  theoretically as I did before.</p>
+  <p>I did consider using a test network but that has the same problem:
+  people who are not too deep into Bitcoin will consider it “just
+  theoretical”. Thus I came to conclusion that it has to be the main
+  chain - no theory, no “what if”s, no guessing. Just a plain
+  transaction that anyone can verify on their own node. No complicated
+  tools, no seeking, no strange programs. Just readily-available
+  software.</p>
+  <p>A situation that will make anyone not believing this transaction
+  really exists look like a LARPer for not running their own node or
+  being too dumb to verify and run a command. Something so strange that
+  people will hopefully want to share it. Something that can be
+  verified. Just like Bitcoin itself.</p>
+  <p>Is it enough to justify the cost? Honestly, I’m not really sure at
+  this point. But at the moment of writing I think it’s a very powerful
+  argument and worth a shot. If you’re annoyed about it maybe, just
+  maybe, you should’ve listened to Tone Vays saying “Now there will be
+  more spam on blockchain because people will spam just to troll you.”
+  Yep, he was pretty much right, though this is definitely not “just
+  trolling”. Oh, speaking of him, you should watch more of his stuff.
+  Seriously.</p>
+  <p>For me this is just a <strong>one time only</strong> project. I
+  won’t be putting any more images into the chain. Maybe, just maybe,
+  except a BIP-110-compliant version if people continue spreading
+  nonsense. I didn’t decide on that yet.</p>
+  <p>Finally, this is the rare occasion when I’m <strong>not</strong>
+  publishing the code on the Internet. I want this entire thing to be a
+  one-time example and not a new wave of NFT shitcoins. If shitcoiners
+  want to code it they will have to work for it, I’m not going to help
+  them. The code is also the biggest garbage of a code I ever made
+  (obviously, it is single-use), so no need to worry that if it leaks
+  accidentally it will be usable by anyone but me. :)</p>
+  <h3 id="then-why-do-you-support-core">Then why do you support
+  Core?</h3>
+  <p>Simply because the various limits proposed by the Knots supporters
+  don’t work. The spammers will always find a workaround. Just like I
+  did. And even worse, almost all of these workarounds, in
+  <strong>addition to putting the spam in anyway</strong> are causing
+  other problems, including <strong>increasing</strong> the amount of
+  spam.</p>
+  <p>Take for example a spammer that wants to put 100B of data into the
+  chain. They won’t fit the 83B limit proposed by BIP-110, so the
+  spammer splits them up to two parts. One part is 32B long and pretends
+  to be a P2TR public key and goes to one output, the rest goes into
+  <code>OP_RETURN</code>. But now the transaction has one more output.
+  Each output contains amount, which is 8B long and a
+  <code>scriptPubkey</code> which is at least 1B long (to encode its
+  length) and in this case it’s 35B long: 1B for length, 1B for version
+  number, 1B for push opcode and 32B for the data. If we count up all
+  the <em>additional</em> data it’s 11B. Thus the data the spamer wants
+  to put in is now 11% larger. The fee rates today make it cost about
+  1-2 sat, maybe 20 sats on a bad day.</p>
+  <p>But even worse, the extra data is now in the output
+  <strong>forever</strong>. The data in scripts that begin with
+  <code>OP_RETURN</code> is never even stored in the UTXO sets and
+  pruning nodes can get rid of it entirely. The data in other outputs
+  need to be stored in UTXO set - a database that needs to be always
+  accessible for block verification, cannot be pruned and requires
+  <strong>additional</strong> data for every output, namely:</p>
+  <ul>
+  <li>The transaction ID - 32B</li>
+  <li>The index of the output in transaction that created it - 4B</li>
+  <li>The height at which the output was mined, so that relative time
+  locks can be verified - 4B</li>
+  <li>A flag determining whether the output is coinbase or not -
+  theoretically 1b but practically 1B.</li>
+  </ul>
+  <p>That’s 41B more, so in total. If we count it up with the entire
+  output data that also needs to be stored in UTXO set it becomes 41 + 8
+  + 35 = 84B. Now add to it the 11B that’s in the chain and you get to
+  95B. So <strong>with the size limit, your node has to store 95% more
+  data while the spammer only pays 11% more fees for it</strong>.</p>
+  <p>So this doesn’t deter spam, it increases it. This is also the exact
+  reason why there is a non-witness penalty (misleadingly named as
+  witness discount) - data in the outputs is more harmful than in the
+  inputs. And this is the exact reason why the Core developers were in
+  favor of increasing the standardness limit on scripts beginning with
+  <code>OP_RETURN</code> from 83B to ~100kB - to remove the motivation
+  of spammers putting even more garbage on the chain. Oh yes, while
+  we’re at it, another lie that Knots supporters like to spread that the
+  limit was removed - it was just increased to a much larger number.</p>
+  <h3 id="but-why-have-spam-why-not-just-stop-it">But why have spam? Why
+  not just stop it?</h3>
+  <p>It is literally impossible. It’s like trying to fly by outlawing
+  gravity. There are so many ways of putting data into the chain I can’t
+  even count them.</p>
+  <h3 id="but-as-bip-110-say-it-sends-signal-that-spam-is-not-welcome">But
+  as BIP-110 say, it sends signal that spam is not welcome!</h3>
+  <p>First, spammers are not pussies that care about your signal.
+  Second, you <em>think</em> you’re sending “you are not welcome”
+  signal. The signal I’m perceiving is “Here’s someone claiming you
+  can’t put contiguous data on the chain, would be real fun challenge to
+  prove them wrong and make them look like clowns by doing exactly what
+  they claim is impossible.”</p>
+  <h3 id="im-just-a-normal-non-programmer-and-this-entire-debate-confuses-me-what-can-i-do">I’m
+  just a normal non-programmer and this entire debate confuses me, what
+  can I do?</h3>
+  <p>Try to find any independent programmer outside of Bitcoin who you
+  can trust and ask for help. It works, I know someone who did exactly
+  that with a good result.</p>
+  <h3 id="you-have-hurt-bitcoin-now-my-node-will-have-to-process-this-garbage">You
+  have hurt Bitcoin, now my node will have to process this garbage</h3>
+  <p>If a single person can significantly hurt Bitcoin then Bitcoin is
+  already doomed and it better die sooner than later so we don’t waste
+  time with it. Sadly, your node will have to process that garbage but
+  at least not store it forever, unlike the unspendable outputs created
+  by the people who were incentivized to make them by the annoying
+  policy rules.</p>
+  <p>If Knots proponents did actually read the original
+  <code>OP_RETURN</code> proposal on the mailing list and honestly
+  engaged with the arguments, potentially even debunking it, instead of
+  just screaming past it or lying to non-technical people about its true
+  nature I would not have the motivation to do this project and your
+  node would now process almost 67kB less than what it does now. Think
+  about that the next time you engage in a dishonest discussion.</p>
+  <h3 id="segwit-discount-is-still-a-problem-you-even-used-it-yourself">SegWit
+  discount is still a problem, you even used it yourself!</h3>
+  <p>No, just because I didn’t feel like paying 4 times as much for the
+  transaction doesn’t make <em>SegWit</em> a problem. I could still do
+  it without it, but more importantly, it’s a misnomer for non-witness
+  penalty. Removing the penalty would remove the incentive to
+  <strong>not</strong> put data into the output scripts - see above. It
+  could conceivably be the case that without the penalty one would find
+  it easier to put the data into unspendable outputs that will be in
+  UTXO set forever without the ability to prune them.</p>
+  <p>Here’s some constructive feedback for the Knots supporters: just
+  drop BIP-110 and instead try to find consensus for a temporary max
+  block weight decreasing soft fork, just like Luke proposed several
+  years ago. I would be inclined to support this if it has sufficient
+  consenus. Though, I do strongly doubt it would get consensus given the
+  block size wars drama, at least it’s not based on obviously wrong
+  arguments.</p>
+  <h3 id="bip-110-still-makes-your-transaction-invalid">BIP-110 still
+  makes your transaction invalid</h3>
+  <p><strong>Only the specific mainnet transaction</strong>. I created
+  another transaction for the BIP-110 regtest which <strong>is</strong>
+  BIP-110 compliant. And as you can see, the transaction got
+  <em>larger</em>, so that means <em>more</em> spam would end up in
+  Bitcoin <em>because of BIP-110</em>. I believe I also found a trick to
+  workaround some other limitation on the resulting image size but I’m
+  not in mood to implement it now.</p>
+  <p>Curiously, in some cases the 256 limit has no effect. Putting a
+  504B long element into the witness (520 is the current limit) is more
+  costly per byte than splitting it up into two pars of 252 bytes since
+  the former requires three more bytes to encode the length while the
+  latter requires 2 more bytes - one for each element. This holds for
+  all values between 253 and 504 inclusively however it is again more
+  advantageous to split 5200B into 21 elements of up to 252B requiring
+  21B of overhead rather than 10 elements requiring 30B of overhead.
+  However, practically speaking, one might want to prevent miners from
+  modifying the data and that requires at least 23B per push. So
+  decreasing the limit from 520 to 256 would lead to increase of
+  overhead from 5% to about 19%.</p>
+  <h3 id="yes-the-size-increases-but-also-the-spammers-will-have-to-pay-more-which-disincentivizes-them">Yes,
+  the size increases but also the spammers will have to pay more which
+  disincentivizes them</h3>
+  <p>Do you really think that someone willing to pay millions for monkey
+  pictures will be realistically demotiated by a few thousands of sats?
+  Heck, I don’t have a monkey picture to sell or buy for millions and
+  just the mere annoyance with the lies of the prominent Knots
+  supporters made me willing to pay for more than 100% overhead. (Yes,
+  my transaction could’ve been much, much smaller if I didn’t want to
+  also make the entire transaction into an image file.)</p>
+  <p>The irony is, to make the spam more expensive the fees need to be
+  higher and for the fees to be higher the blocks need to be fuller and
+  for the blocks to be fuller there needs to be more data that nodes
+  process. Well, technicaly a block size limit decrease soft fork would
+  also do the job but that might be very unpopular.</p>
+  <h3 id="but-we-still-need-to-obey-the-government-if-they-say-bad-pictures-on-nodes-are-illegal-we-have-to-change-our-node-software.">But
+  we still need to obey the government! If they say bad pictures on
+  nodes are illegal we have to change our node software.</h3>
+  <p>If you listen to the government when it says “change your node
+  software because of bad pictures” you will listen to it when they say
+  “add inflation to your node”, “add censorship to your node”, “turn
+  your node into a spyware”.</p>
+  <p><strong>The entire point of Bitcoin is that the government can’t
+  enforce such commands because they don’t know/can’t prove you’re
+  running it.</strong> If they can, you have a spyware problem - a much
+  bigger issue than illegal pictures on the chain. The irony is that
+  being able to run Bitcoin covertly is part of the reason behind
+  smaller block size limit.</p>
+  <p>Running software that is inherently designed to resist government
+  and then insisting on changing it based on government wishes is quite
+  something.</p>
+  <h3 id="you-still-had-to-hex-decode-the-transaction">You still had to
+  hex-decode the transaction!</h3>
+  <p>And, in case of <code>bitcoin-cli</code> you also have to
+  hex-decode it in case of an output containing a script beginning with
+  <code>OP_RETURN</code>. The data is still stored and transmitted in
+  non-hex form for a simple reason that hex would take up exactly twice
+  as much data. Instead of 767GB it would take 1.5 TB.</p>
+  <p>This is obviously not happening, though I heard someone
+  non-technical say it is so. I think it was a honest mistake.</p>
+  <p>Anyway, if hex-encoding would be a good argument for this then it
+  is equally good for other kinds of data.</p>
+  <h3 id="youre-just-misinterpreting-the-bitcoin-data-bitcoin-only-supports-arbitrary-data-in-op_return-outputs-and-nowhere-else">You’re
+  just misinterpreting the Bitcoin data, Bitcoin only supports arbitrary
+  data in <code>OP_RETURN</code> outputs and nowhere else</h3>
+  <p>Why does BIP-110 try to restrict the length of any other data then?
+  Also, who’s to say that this isn’t an image and it isn’t
+  <em>Bitcoin</em> that is just misinterpreting an image file as a
+  transaction? I did in fact construct most the transaction using an
+  image encoder, not the other way around.</p>
+  <h3 id="the-image-on-this-website-is-not-the-transaction-itself">The
+  image on this website is not the transaction itself!</h3>
+  <p>As it shouldn’t be because you shouldn’t trust me when I claim that
+  I put that stuff into the chain. Just as you shouldn’t blindly trust
+  the developers (Core or Knots). This is Bitcoin - don’t trust, verify.
+  Go and get it from the chain yourself.</p>
+  <h3 id="he-used-op_sha256-lets-ban-that">He used
+  <code>OP_SHA256</code>, let’s ban that!</h3>
+  <p>Yes, do! You will break the entire Lightning Network and all the
+  coffee transactions made on it will now have to be processed by your
+  node!</p>
+  <h3 id="we-need-to-ban-transaction-version-536870912-now">We need to
+  ban transaction version 536870912 now!</h3>
+  <p>That will only stop the more interesting variant of this
+  transaction. It will not stop all possible ways this can be achieved
+  and definitely won’t stop the simpler method where one has to seek
+  into the transaction but the data is still contiguous.</p>
+  <h3 id="arent-you-the-guy-who-found-a-bug-in-the-op_return-pr">Aren’t
+  you the guy who found a bug in the <code>OP_RETURN</code> PR?</h3>
+  <p>I’m the guy who found an <strong>ambiguity</strong> in the PR and
+  pointed out that the meaning of the parameter could be interpreted
+  either way. I don’t decide which meaning is the correct one. This is a
+  normal thing in software development when sometimes it’s not clear
+  whether something is a bug or intended. Luke spun it as a bug because
+  he thinks the meaning is clear but it is objectively not clear because
+  the explanation that the parameter means the data stored, not the
+  overhead also makes sense given the parameter already ignored the
+  overhead.</p>
+  <h2 id="update---the-bip-110-compliant-variant">Update - the BIP-110
+  compliant variant</h2>
+  <p><em>Huuuuge thanks to Luke-Jr for alerting me to the fact that I
+  previously misread <strong>part</strong> of BIP-110. His hint helped
+  me avoid wasting an hour or two tracking down a “weird, nonsensical
+  bug” and as such I could create this BIP-110-compliant transaction
+  sooner.</em></p>
+  <p>I got a lot of criticizm/feedback that “BIP-110 works because it
+  stops that specific transaction”. This came from people who don’t
+  understand that just as Knots can change a constant in their code, so
+  can I. I appreciate though, even if one understands the argumen,
+  actually generating a BIP-110 transaction is much more convincing than
+  claiming “I will change a constant”.</p>
+  <p>However, there is a challenge with proving that my transaction is
+  BIP-110-compliant: I cannot do it on mainnet because the mainnet isn’t
+  enforcing the rule yet! Even if I broadcasted it on mainnet today
+  nobody could prove that it is compliant unless the fork was already
+  activated. But the point of this discussion is to have it
+  <em>before</em> it activates. Plus I often don’t like waiting for half
+  a year.</p>
+  <h3 id="verification-of-the-proof-1">Verification of the proof</h3>
+  <p>So the only way to prove a transaction is BIP-110-compliant is to
+  test it against the working BIP-110 implementation using a test
+  network - the best for this is regtest. From the official BIP-110
+  website we can navigate to GitHub and verify that their regtest
+  implementation enforces the rules. In the file
+  <code>kernel/chainparams.cpp</code> we can find the section handling
+  regtest by searching for the <code>REGTEST</code> keyword.</p>
+  <p>Scrolling down a bit we can find this line:</p>
+  <div class="sourceCode" id="cb7"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>consensus<span class="op">.</span>vDeployments<span class="op">[</span>Consensus<span class="op">::</span>DEPLOYMENT_REDUCED_DATA<span class="op">].</span>min_activation_height <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span></code></pre></div>
+  <p>Activation height being <code>0</code> means the rules are active
+  right away without any mining - this is a usual thing to do, we can
+  see a similar thing above with Taproot, there’s even a comment
+  explaining it.</p>
+  <p>Therefore we can just use a knots release in regtest mode to check
+  the transaction.</p>
+  <p><strong>IMPORTANT WARNING: I have not verified that the knots fork
+  that claims to enforce BIP-110 is not actually a malware that does
+  anything other than enforce the BIP-110 rules. For security reasons
+  you should NOT run it on any computer you have private data on without
+  proper isolation, such as virtual machine. I AM NOT RESPONSIBLE FOR
+  ANY DAMAGES THAT YOU MAY EXPERIENCE BY RUNNING THE KNOTS SOFTWARE. DO
+  IT AT YOUR OWN RISK!</strong></p>
+  <p>To make things easier, I wrote a script that you can verify what it
+  does and then run it. I know it can be a lot to ask for some people
+  but</p>
+  <ul>
+  <li>The script is very simple and not too long, it consists of only a
+  few basic steps.</li>
+  <li>The script is heavily commented explaining the purpose of each
+  command.</li>
+  <li>It should be easy for most Linux users (and possibly advanced
+  macOS users) with a bit of experience to verify it. You can just get a
+  neutral friend to check it for you.</li>
+  </ul>
+  <p>I packaged the script together with the transaction in an archive
+  for easier handling.</p>
+  <ol type="1">
+  <li>Download <a href="contigous-data-in-bip-110-verify.tar.gz">the
+  archive</a></li>
+  <li>Unpack the archive</li>
+  <li>Open the <code>luke.tiff</code> file to verify it’s a contiguous
+  image file</li>
+  <li>Read the script and verify that it’s doing what I claim it’s
+  doing</li>
+  <li>Open the terminal and <strong>enter the
+  <code>contigous-data-in-bip-110-verify</code> directory</strong> - the
+  script will not work without it!</li>
+  <li>Run the script according to the instructions in its top comments.
+  E.g. in a fresh VM you can run
+  <code>./verify_transaction_is_bip110.sh --download-knots</code></li>
+  </ol>
+  <p>If what I’m saying is true you will see the script successfully
+  mine a block with that transaction included. (The last command will
+  output the hash of the block.)</p>
+  <h2 id="acknowledgment">Acknowledgment</h2>
+  <p>Thanks to the person who helped me generate the image and to
+  everyone who provided any feedback and help with this project!</p>
+	</main>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+</body>
